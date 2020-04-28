@@ -1,39 +1,15 @@
-# rabbitmq
-2.x中使用automapper过于麻烦，所以简单封装下，支持直接通过autoInject(sourceType,tagettype,tagettype2)注解方式直接映射，也支持创建profile方式
-两种使用方式参考：
-        [Route("TestParamValide")]
-        [HttpPost]
-        public ActionResult<object> TestParamValide([FromBody]ValideModel model)
-        {
-            var sysDic = model.MapTo<SysDictionary>();
-            return null;
-        }
-
-        [Route("TestParamValideMapperProfile")]
-        [HttpPost]
-        public ActionResult<object> TestParamValideMapperProfile([FromBody]ValideModel2 model)
-        {
-            var sysDic = model.MapTo<SysDictionary>();
-            return null;
-        }
-        //方式一：直接使用AutoInject
-         [AutoInject(typeof(SysDictionary), typeof(ValideModel))]
-        public class ValideModel : Infrastructure.Mapper.DTO
-        {
-            [Required(ErrorMessage = "{0}不可为空")]
-            public string Code { get; set; }
-        }
-
-        public class ValideModel2 : Infrastructure.Mapper.DTO
-        {
-            [Required(ErrorMessage = "{0}不可为空")]
-            public string Code { get; set; }
-        }
-        //方式二：创建Profile
-        public class ValideModelMapperProfile : Profile, IMapperProfile
-        {
-            public ValideModelMapperProfile()
-            {
-                CreateMap<SysDictionary, ValideModel2>().ReverseMap();
-            }
-        }
+使用方式：任意Service的IService接口对象实现 IConsumerDependency，然后，添加对象 infrastructure.Mq.RabbitMQ的包的引用，同时在Service的对应方法上加上[Consumer("对列名称")]即可。
+比如：
+ public interface ISysDictionaryService : IServiceDependency,IConsumerDependency
+    {
+        bool TestRequest();        
+        bool Test(string msg);
+     }
+ public class SysDictionaryService : ISysDictionaryService
+ {
+        [Consumer("SysDictionaryService.queue.TestRequest")]
+        public bool TestRequest(string msg){return true;}
+        
+        [Consumer("SysDictionaryService.queue.Test")]
+        public bool Test(string msg){return true;}
+ }
