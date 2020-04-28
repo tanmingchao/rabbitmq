@@ -1,4 +1,4 @@
-# automapper
+# rabbitmq
 2.x中使用automapper过于麻烦，所以简单封装下，支持直接通过autoInject(sourceType,tagettype,tagettype2)注解方式直接映射，也支持创建profile方式
 两种使用方式参考：
         [Route("TestParamValide")]
