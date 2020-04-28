@@ -1,0 +1,11 @@
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\bin\Release\netcoreapp2.2\Infrastructure.Mq.RabbitMQ.deps.json
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\bin\Release\netcoreapp2.2\Infrastructure.Mq.RabbitMQ.dll
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\bin\Release\netcoreapp2.2\Infrastructure.Mq.RabbitMQ.pdb
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\bin\Release\netcoreapp2.2\Infrastructure.Utils.dll
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\bin\Release\netcoreapp2.2\Infrastructure.Utils.pdb
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\obj\Release\netcoreapp2.2\Infrastructure.Mq.RabbitMQ.csprojAssemblyReference.cache
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\obj\Release\netcoreapp2.2\Infrastructure.Mq.RabbitMQ.AssemblyInfoInputs.cache
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\obj\Release\netcoreapp2.2\Infrastructure.Mq.RabbitMQ.AssemblyInfo.cs
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\obj\Release\netcoreapp2.2\Infrastructure.Mq.RabbitMQ.csproj.CopyComplete
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\obj\Release\netcoreapp2.2\Infrastructure.Mq.RabbitMQ.dll
+F:\WORKSPACE\XIANGJIA\bp_infrastructure_net\Infrastructure\Infrastructure.Mq.RabbitMQ\obj\Release\netcoreapp2.2\Infrastructure.Mq.RabbitMQ.pdb
